@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventListener!</title>
+  </head>
+  <body>
+    <h1 id="heading">EventListener</h1>
+    <div class="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos
+      nesciunt ratione doloribus omnis. Blanditiis commodi at quo reiciendis?
+      Commodi eius libero autem nostrum quasi eveniet odio recusandae blanditiis
+      rerum.
+    </div>
+
+    <div class="name">
+      <h1>Dipak Mundhe</h1>
+    </div>
+
+    <!--  First Way -->
+    <!-- <div class="btn" onclick="console.log('Hello DM')"><button>Click me</button></div> -->
+
+    <!-- Second Way -->
+
+    <!-- <div class="btn" onclick="HandleClick()"><button>Click me</button></div> -->
+
+    <!-- Third Way -->
+    <div id="btn"><button>click me</button></div>
+
+    <script>
+      function HandleClick() {
+        console.log("Hello DM");
+      }
+
+      // add event Listener
+
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        console.log("Hello DM");
+        // change style on btn click
+        const heading = document.getElementById("heading");
+
+        // toggle color
+
+        if ((heading.style.color = "red")) {
+          heading.style.color = "blue";
+        } else if ((heading.style.color = "blue")) {
+          heading.style.color = "red";
+        }
+      });
+    </script>
+  </body>
+</html>

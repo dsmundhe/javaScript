@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecotores</title>
+  </head>
+  <body>
+    <h1 class="heading">Heading</h1>
+    <div class="block">Hello dm</div>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat,
+      modi reprehenderit fugiat eum autem, dolorum ut deserunt eius quia
+      consequatur accusamus doloremque repudiandae maiores eligendi repellendus
+      nostrum? Nesciunt, corrupti?
+    </p>
+    <h2 id="name">Dipak Mundhe</h2>
+    <script>
+      console.log(document.title);
+      //query selector
+
+      const el = document.querySelector(".heading");
+      console.log(el);
+      console.log(el.innerText);
+
+      //qurey selector All
+
+      const queall = document.querySelectorAll("div");
+      console.log(queall);
+      console.log(queall[0]);
+
+      //change inner HTML or Text
+
+      const heading = document.querySelector(".heading");
+      heading.innerText = "Dipak Mundhe";
+
+      // select by ID
+
+      const selById = document.getElementById("name");
+      console.log(selById);
+      console.log(selById.innerText);
+
+      // select by classname
+
+      const selByClass = document.getElementsByClassName("block");
+      console.log(selByClass[0]);
+      console.log(selByClass[0].innerText);
+    </script>
+  </body>
+</html>
