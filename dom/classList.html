@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    ClassList acces and Add and Remove
+    -->
+    <div class="block">
+      <div class="heading">
+        <h1 id="'head">Heading</h1>
+      </div>
+      <div class="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+        laborum iure esse deleniti molestias provident? Maiores aspernatur error
+        laboriosam sit tenetur consequuntur, a cum architecto, ullam consequatur
+        ea voluptatibus cupiditate?
+      </div>
+    </div>
+    <script>
+        // Corrected class name typo in query
+        const heading = document.getElementsByClassName("heading");
+        console.log(heading); // No changes needed here
+      
+        // Corrected the class name 'blcok' to 'block'
+        const block = document.getElementsByClassName("block");
+        console.log(document.body.classList); // No changes needed here
+      
+        // Corrected 'setattribute' to 'setAttribute' and the variable reference to 'val'
+        const val = document.getElementById("head");
+        val.setAttribute("class", "headone"); // Updated to 'val' instead of 'head';
+
+        heading.remove();
+      </script>
+      
+  </body>
+</html>
