@@ -5,14 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Location!</title>
     <style>
-        body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #74ebd5, #9face6);
+        color: #333;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 10px 0;
+        font-size: 2rem;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      #btn {
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #ffffff;
+        background-color: #6c63ff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s, background-color 0.3s;
+      }
+
+      #btn:hover {
+        background-color: #574b90;
+        transform: scale(1.05);
+      }
+
+      #btn:active {
+        transform: scale(0.95);
+      }
     </style>
   </head>
   <body>
     <h1>Get Location!</h1>
-    <h1 id="location">........</h1>
+    <h1 id="location">Your Location:</h1>
     <button id="btn">Get Location</button>
     <script src="locationGet.js"></script>
   </body>
