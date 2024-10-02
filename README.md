@@ -43,4 +43,4 @@ Make sure you have Node.js installed on your machine. You can download it from [
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/dsmundhe/javaScript.git
